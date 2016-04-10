@@ -1,0 +1,212 @@
+/* Sass Document */
+
+/********** vars **********/
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #262626;
+$color-blue: #002a76;
+/*$font-main: 'Roboto Slab', sans-serif;*/
+$font-main: "adelle",serif;
+$font-sec: "adelle-sans",sans-serif;
+$shadow: 0px 0px 15px #333;
+$shadowSm: 0px 0px 20px #999;
+$shadowW: 0px 0px 5px #fff;
+
+/********** mixins **********/
+@mixin marC {
+	margin: 0 auto;
+	padding: 0;
+}
+@mixin mar0 {
+	margin: 0;
+	padding: 0;
+}
+@mixin mar5v {
+	margin: 5px 0;
+	padding: 0;
+}
+@mixin mar5h {
+	margin: 0 5px;
+	padding: 0;
+}
+@mixin mar10v {
+	margin: 10px 0;
+	padding: 0;
+}
+@mixin mar20v {
+	margin: 20px 0;
+	padding: 0;
+}
+
+
+/********** styles **********/
+body, html {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-family: $font-main;
+	
+}
+
+.bRealBak {
+	width: 100%;
+	height: 100%;
+	background: url(../images/pho7119.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+.bListingW {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	z-index: 10;
+	color: $color-white;
+}
+.bListingW h1 {
+	font-size: 42px;
+	@include mar5v;
+	text-shadow: $shadow;
+}
+.bListingW h2 {
+	font-size: 36px;
+	@include mar5v;
+	text-shadow: $shadow;
+}
+.bListingW h3 {
+	font-size: 24px;
+	@include mar5v;
+	text-shadow: $shadow;
+}
+.info {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 36px;
+	height: 36px;
+	background-color: $color-white;
+	opacity: 0.6;
+	z-index: 10;
+	text-align: center;
+	box-shadow: $shadow;
+}
+.info span {
+	opacity: 1.0;
+	font-size: 22px;
+	color: $color-grey;
+	z-index: 20;
+	margin-top: 6px;
+}
+.toDo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	z-index: 10;
+	box-shadow: $shadow;
+	display: none;
+}
+.toDo .toDoBak {
+	width: 100%;
+	height: 100%;
+	background-color: $color-white;
+	opacity: 0.6;
+	z-index: 10;
+}
+.toDo .infoG {
+	position: absolute;
+	font-size: 18px;
+	color: $color-blue;
+	z-index: 20;
+}
+.agentW {
+	position: relevant;
+	top: 0px;
+	width: 300px;
+	z-index: 10;
+	color: $color-white;
+}
+.agentPho {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 10;
+}
+.agentName {
+	position: absolute;
+	top: 20px;
+	left: 122px;
+	z-index: 10;
+	color: $color-blue;
+	font-size: 28px;
+	font-weight: bold;
+}
+.smCaps {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.smSmall {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.houseW {
+	position: absolute;
+	top: 150px;
+	left: 5px;
+	width: 290px;
+	padding: 0 8px;
+	color: $color-grey;
+	z-index: 20;
+	background-color: $color-white;
+	opacity: 0.8;
+	box-shadow: $shadowSm;
+	font-family: $font-sec;
+}
+.houseAddress {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+}
+.houseAbout1 {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: bold;
+}
+.houseAbout2 {
+	font-size: 14px;
+	@include mar10v;
+	line-height: 22px;
+}
+.houseAbout2 ul {
+	font-size: 14px;
+	@include mar20v;
+	padding-left: 16px;
+	line-height: 22px;
+}
+.icos {
+	width: 100%;
+	text-align: center;
+}
+.icos span {
+	@include mar5h;
+	width: 100%;
+	display: inline;
+}
+.phoSwiper {
+	z-index: 30;
+	display: none;
+}
+.icoX {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: $color-grey;
+	z-index: 20;
+	opacity: 0.6;
+}

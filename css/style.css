@@ -175,3 +175,17 @@ body, html {
   color: #262626;
   z-index: 20;
   opacity: 0.6; }
+
+.vidSR {
+  position: relative;
+  width: 1280px;
+  top: 100px;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 40; }
+
+.vidS {
+  position: absolute;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0; }
